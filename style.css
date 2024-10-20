@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar starts here */
+
+#navbar {
+    display: flex;
+    background: rgb(197, 86, 104);
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 22;
+}
+
+#logo {
+    margin: 20px 27px;
+}
+
+#logo a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: -90px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0px 4px;
+
+}
+
+#navbar ul li a {
+    color: #f4f5fb;
+    padding: 5px 16px;
+    border-radius: 8px;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+#search-bar input[type="search"] {
+    margin: 4px 0px;
+    margin-right: 8px;
+    border-radius: 5px;
+    height: 25px;
+    outline: none;
+    padding: 8px 12px;
+    width: 60%;
+    border: 1px solid black;
+    border: none;
+}
+
+#search-bar input[placeholder="Search here"] {
+    text-align: center;
+}
+
+i.fa-magnifying-glass {
+    height: auto;
+    color: #f4f5fb;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Navigation Bar ends here */
+
+/* Home Section starts here */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: '';
+    width: 100%;
+    height: 450px;
+    background: url(/assets/images/bg.jpg) no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.96;
+    opacity: 0.76;
+}
+
+#home h1{
+    letter-spacing: 0.09rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: black;
+}
+#home i.fa-arrow-down{
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+#home i.fa-sharp{
+    margin-right: 6px;
+    padding: 6px 6px;
+    background: #f4f5fb;
+    color: black;
+    border-radius: 6px;
+    transition: 2s;
+}
+#home i.fa-sharp:hover{
+    transform: translateY(-8px);
+}
+/* Home Section ends here */
+
+/* About Us Section Starts here  */
+#about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    position: relative;
+}
+
+#about-us .img {
+    width: 50%;
+    margin: 110px 80px;
+}
+
+#about-us .about {
+    margin: 110px 50px;
+    align-items: center;
+    justify-content: center;
+    color: #f4f5fb;
+}
+
+#about-us .about p {
+    margin-bottom: 13px;
+    font-size: 1.1rem;
+    color: black;
+}
+
+#about-us .about h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    color: black;
+}
+
+#about-us .about button {
+    transition: 0.4s, ease;
+}
+
+#about-us .about button:hover {
+    transform: translateX(6px);
+}
+
+/* About Us Section Ends here  */
+
+/* Gallery Section Starts here */
+
+#gallery-section {
+    position: relative;
+    margin-top: 0px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 5rem;
+}
+
+#gallery-section h1{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.pictures{
+    padding-bottom: 2rem;
+}
+
+#gallery-section i {
+    margin: 0px 10px;
+    color: black;
+    font-size: 1.72rem;
+}
+
+#gallery {
+    display: flex;
+}
+
+#gallery .gallery-box {
+    width: 172px;
+    box-shadow: 0rem 0.25rem 0.5rem 0.1rem rgba(128, 128, 128, 0.726);
+    margin: 40px 40px;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+#gallery .gallery-box img {
+    width: 170px;
+}
+
+#gallery .gallery-box:hover {
+    transform: translatey(-10px);
+}
+
+/* Gallery Section Ends here */
+
+/* Video Section starts here */
+
+.secondsection {
+    max-width: 100vw;
+    margin: auto;
+    height: 55vw;
+    padding-top: 7vw;
+    padding-left: 3.5vw;
+    margin-top: 4rem;
+}
+
+.secondsection h1{
+    margin-left: 2rem;
+}
+.pst-videos {
+    display: flex;
+    margin: 3.4rem 0rem;
+    max-width: 90vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    padding: 1rem 5rem;
+}
+
+.box video {
+    position: relative;
+    width: 12rem;
+    outline: 0.1rem solid black;
+    border-radius: 0.7rem;
+    z-index: 20;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    box-shadow: 0rem 0.25rem 0.5rem 0.2rem rgba(128, 128, 128, 0.726);
+}
+
+.box video:hover{
+    transform: translateY(-10px);
+}
+
+.box h4 {
+    margin: 1.4rem 0.1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    cursor: pointer;
+}
+
+.box h4:hover {
+    color: black;
+    text-decoration: underline;
+
+}
+
+/* Video section ends here */
+
+
+/* Contact Section starts here */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    padding-bottom: 35px;
+}
+
+.contact-section .contact-txt {
+    margin-top: 150px;
+    padding: 0px 100px;
+}
+
+.contact-section h2 {
+    color: black;
+    margin-top: 12px;
+}
+
+.contact-section p {
+    color: black;
+    margin-top: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-section h5 {
+    color: black;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-section h6 {
+    color: black;
+    margin-top: 9px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-section .contact {
+    margin-top: 100px;
+}
+
+.contact-section form {
+    margin-top: 5px;
+}
+
+.contact-section form input[type="text"] {
+    width: 70%;
+    margin: 3px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.contact-section form input[type="number"] {
+    width: 70%;
+    margin: 3px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.contact-section form input[type="email"] {
+    width: 70%;
+    margin: 3px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.contact-section form textarea {
+    margin: 3px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    width: 70%;
+    border: 1px solid black;
+}
+
+.contact-section form input[type="submit"] {
+    width: 15%;
+    display: block;
+    margin: 3px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    border: 1px solid black;
+}
+
+.contact-section form input:hover[type="submit"] {
+    width: 19%;
+}
+
+/* Contact Section ends here */
+
+/* Footer Section starts here */
+
+.footer-section{
+    /* background: rgb(197, 86, 104); */
+    border-top: 1px solid black;
+}
+.footer-section .footer-content{
+    display: flex;
+    padding: 0px 60px;
+    padding-bottom: 10px;
+}
+.footer-content .row{
+    width: 100%;
+    margin: 0px 4px;
+    margin-top: 75px;
+    padding: 0px 3px;
+}
+.footer-content #row-1 a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+}
+.footer-content #row-1 p{
+    margin-top: 10px;
+    font-weight: 500;
+    color: black;
+    padding: 0px 3px;
+}
+
+.footer-content #row-1 i{
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 0px 4px;
+    font-weight: bold;
+}
+.footer-content #row-1 i[class="fa-brands fa-twitter"]{
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-twitter"]:hover{
+    color: #f4f5fb;
+    background-color: black;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-facebook-f"]{
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footer-content #row-1 i[class="fa-brands fa-facebook-f"]:hover{
+    color: #f4f5fb;
+    background-color: black;
+}
+.footer-content #row-1 i[class="fa-brands fa-instagram"]{
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footer-content #row-1 i[class="fa-brands fa-instagram"]:hover{
+    color: #f4f5fb;
+    background-color: black;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-youtube"]{
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-youtube"]:hover{
+    color: #f4f5fb;
+    background-color: black;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-pinterest-p"]{
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-pinterest-p"]:hover{
+    color: #f4f5fb;
+    background-color: black;
+}
+
+.footer-content h3{
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+}
+.footer-content ul{
+    margin-top: 14px;
+}
+.footer-content li{
+    list-style: none;
+}
+.footer-content li a{
+    color: black;
+}
+.footer-content li a:hover{
+    text-decoration: underline;
+}
+.footer-content .row img{
+    width: 190px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+
+/* Footer Section ends here */
+
+
+/* Utility Classes starts here */
+
+.h-primary {
+    color: black;
+    font-size: 2.8rem;
+    padding: 3px 15px;
+}
+
+.h-secondary {
+    color: black;
+}
+
+.center {
+    text-align: center;
+    color: black;
+}
+
+.btn {
+    padding: 6px 13px;
+    margin: 14px 12px;
+    border: 2px solid #f4f5fb;
+    border-radius: 10px;
+    background: #df3737;
+    color: #f4f5fb;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: black;
+    background: #f4f5fb;
+    border: 2px solid black;
+}
+
+/* Utility Classes ends here */
